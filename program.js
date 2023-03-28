@@ -1,46 +1,35 @@
-//Selection Practice Problems with case statements
-//1. Read a single digit number and write the number in word using Case
-let number = Math.floor(Math.random()*10);
-switch(number)
+//2. Read a Number and Display the week day (Sunday, Monday,…)
+
+let dayNum = Math.floor(Math.random()*7)+ 1;
+switch(dayNum)
 {
-    case 0:
-            console.log("Generate random number : "+ number);
-            console.log("Word ==> Zero");
-            break;
     case 1:
-            console.log("Generate random number : "+ number);
-            console.log("Word ==> One");
+            console.log("Generate random number : "+ dayNum);
+            console.log("Day ==> Sunday");
             break;
     case 2:
-            console.log("Generate random number : "+ number);
-            console.log("Word ==> Two");
+            console.log("Generate random number : "+ dayNum);
+            console.log("Day ==> Monday");
             break;
     case 3:
-            console.log("Generate random number : "+ number);
-            console.log("Word ==> Three");
+            console.log("Generate random number : "+ dayNum);
+            console.log("Day ==> Tuesday");
             break;
     case 4:
-            console.log("Generate random number : "+ number);
-            console.log("Word ==> Four");
+            console.log("Generate random number : "+ dayNum);
+            console.log("Day ==> Wednesday");
             break;
     case 5:
-           console.log("Generate random number : "+ number);
-            console.log("Word ==> Five");
+            console.log("Generate random number : "+ dayNum);
+            console.log("Day ==> Thrusday");
             break;
     case 6:
-            console.log("Generate random number : "+ number);
-            console.log("Word ==> Six");
+           console.log("Generate random number : "+ dayNum);
+            console.log("Day ==> Friday");
             break;
     case 7:
-            console.log("Generate random number : "+ number);
-            console.log("Word ==> Seven");
-            break;
-    case 8:
-            console.log("Generate random number : "+ number);
-            console.log("Word ==> Eight");
-            break;
-    case 9:
-            console.log("Generate random number : "+ number);
-            console.log("Word ==> Nine");
+            console.log("Generate random number : "+ dayNum);
+            console.log("Day ==> Saturday");
             break;
 } 
+console.log("--------------------------------------------"); 
