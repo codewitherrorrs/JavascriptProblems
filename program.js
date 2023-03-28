@@ -1,18 +1,41 @@
-//UC5- Unit Conversion 
-//a. 1ft = 12 in then 42 in = ? ft 
-let inches=42;
-let ft=inches/12;
-console.log("Conversion inches into ft : " + ft); 
-//b. Rectangular Plot of 60 feet x 40 feet in meters
-let feet1=60; 
-let feet2=40;
-let meters1=60 /3.281; 
-let meters2=40 /3.281;
-let product=meters1 * meters2; 
-console.log("Conversion feet into meter: " + product); 
-//c. Calculate area of 25 such plots in acres
-let area=25;
-let result1=area / 43560;
-console.log("Result : " + result1);
-console.log("--------------------------------------------"); 
 
+//--Selection Practice Problems with if & else  
+//1.Write a program that reads 5 Random 3 Digit values and then outputs the minimum and the maximum value
+//--Selection Practice Problems with if & else  
+//1.Write a program that reads 5 Random 3 Digit values and then outputs the minimum and the maximum value
+let number1=Math.floor(Math.random() * 900)+100;
+console.log("first number: "+number1);
+let number2=Math.floor(Math.random() * 900)+100;
+console.log("Second number: "+number2);
+let number3=Math.floor(Math.random() * 900)+100;
+console.log("third number: "+number3);
+let number4=Math.floor(Math.random() * 900)+100;
+console.log("four number: "+number4);
+let number5=Math.floor(Math.random() * 900)+100;
+console.log("five number: "+number5);
+
+if(number1> number2 && number1>number3 && number1> number4 && number1> number5 )
+{
+    console.log("Greater number ==> "+number1);
+}
+else if(number2> number1 && number2> number3 && number2> number4 && number2> number5 )
+{
+    console.log("Greater number ==> "+number2);
+}
+else if(number2> number1 && number2> number3 && number2> number4 && number2> number5  )
+{
+    console.log("Greater number ==> "+number2);
+}
+else if(number3> number1 && number3> number2 && number3> number4 && number3> number5 )
+{
+    console.log("Greater number ==> "+number3);
+}
+else if(number4> number1 && number4> number2 && number4> number3 && number4> number5 )
+{
+    console.log("Greater number ==> "+number4);
+}
+else
+{
+    console.log("Greater number ==> "+number5);
+}
+console.log("--------------------------------------------"); 
