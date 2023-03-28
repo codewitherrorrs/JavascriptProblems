@@ -1,19 +1,16 @@
-//3. Write a program that takes a input and determines if the number is a prime
-let primeNum = Math.floor(Math.random()*10)+2;
-let countValue=0;
-for (let m = 1; m <=primeNum; m++)
+//4.Write a program to compute Factors of a number N using prime factorization method.
+let primeFactorNum=18;
+console.log("Prime factor are:-\n--------------------");
+for (let k = 2; k <= primeFactorNum; k++)
 {
-   if (primeNum % m == 0)
-   {
-    countValue++;
-   }
+    while (primeFactorNum % k == 0)
+    {
+        primeFactorNum = primeFactorNum / k;
+        console.log(k);
+    }
 }
-if(countValue == 2)
-{ 
-   console.log(primeNum + " is prime number");
-}
-else 
-{ 
-   console.log(primeNum + " is not prime number");
-}
-console.log("--------------------------------------------"); 
+if (primeFactorNum > 2)
+ {
+    console.log( primeFactorNum);
+ }
+ console.log("--------------------------------------------"); 
