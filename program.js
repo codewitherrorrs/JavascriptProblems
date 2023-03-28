@@ -1,16 +1,9 @@
-//4.Write a program to compute Factors of a number N using prime factorization method.
-let primeFactorNum=18;
-console.log("Prime factor are:-\n--------------------");
-for (let k = 2; k <= primeFactorNum; k++)
+//5.Write a program that computes a factorial of a number taken as input. Such as 5 Factorial – 5! = 1 * 2 * 3 * 4 * 5
+let factNumber=5;
+let fact=1;
+for(i=1;i<=factNumber;i++)
 {
-    while (primeFactorNum % k == 0)
-    {
-        primeFactorNum = primeFactorNum / k;
-        console.log(k);
-    }
+    fact=fact*i;
 }
-if (primeFactorNum > 2)
- {
-    console.log( primeFactorNum);
- }
- console.log("--------------------------------------------"); 
+console.log("\nFactorial of "+ factNumber+" is ==>  " + fact) 
+console.log("--------------------------------------------"); 
