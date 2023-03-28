@@ -1,12 +1,12 @@
-
-//Repetition Practice Problems with for loop
-//1. Prints a table of the powers of 2
-
-let value=Math.floor(Math.random()*10);
-let i;
-for (i=0;i<=value;i++)
-   {
-    let power=Math.pow(2,i);
-    console.log("power of 2^"+ i +" is " +power);
-   }
-console.log("--------------------------------------------"); 
+//2. Write a program to prints the nth harmonic number
+let harmonicNumber=Math.floor(Math.random() * 10)+1;
+let sumOfNumber=0;
+let k;
+for(k=1; k<=harmonicNumber; k++)
+{
+    let value=1/k;
+    sumOfNumber=sumOfNumber + value;
+    console.log("1/"+k);
+}
+console.log("sum of harmonic series are:  "+sumOfNumber);
+ console.log("--------------------------------------------"); 
