@@ -1,24 +1,44 @@
-//4. Write a program to simulate a coin flip and print out "Heads" or "Tails" accordingly
-let head = 0; 
-let tail = 0;
-let count = 0;
-let numflip=5;
-while (count < numflip)
-{
-   let result=Math.floor(Math.random() * 2);
-   console.log(result);
-   if (result < 1)
-   {
-       head++;
-       console.log("head");
-   }
-   else
-   {
-       tail++;
-       console.log("tails");
-   }
-   count++;
-}
-console.log("Total Number of Heads: " + head);
-console.log("Total Number of Tails: " + tail); 
-console.log("--------------------------------------------"); 
+//Selection Practice Problems with if else if and else
+ //1.Read a single digit number and write the number in word 
+ let num=Math.floor(Math.random() * 10);
+ if(num==0)
+ {
+    console.log("zero");
+ }
+ else if(num==1)
+ {
+    console.log("One");
+ }
+ else if(num==2)
+ {
+    console.log("Two");
+ }
+ else if(num==3)
+ {
+    console.log("Three");
+ }
+ else if(num==4)
+ {
+    console.log("Four");
+ }
+ else if(num==5)
+ {
+    console.log("five");
+ }
+ else if(num==6)
+ {
+    console.log("six");
+ }
+ else if(num==7)
+ {
+    console.log("seven");
+ }
+ else if(num==8)
+ {
+    console.log("eight");
+ }
+ else if(num==9)
+ {
+    console.log("nine");
+ }  
+ console.log("--------------------------------------------"); 
