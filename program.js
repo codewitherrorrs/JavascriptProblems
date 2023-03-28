@@ -1,12 +1,19 @@
-//2. Write a program to prints the nth harmonic number
-let harmonicNumber=Math.floor(Math.random() * 10)+1;
-let sumOfNumber=0;
-let k;
-for(k=1; k<=harmonicNumber; k++)
+//3. Write a program that takes a input and determines if the number is a prime
+let primeNum = Math.floor(Math.random()*10)+2;
+let countValue=0;
+for (let m = 1; m <=primeNum; m++)
 {
-    let value=1/k;
-    sumOfNumber=sumOfNumber + value;
-    console.log("1/"+k);
+   if (primeNum % m == 0)
+   {
+    countValue++;
+   }
 }
-console.log("sum of harmonic series are:  "+sumOfNumber);
- console.log("--------------------------------------------"); 
+if(countValue == 2)
+{ 
+   console.log(primeNum + " is prime number");
+}
+else 
+{ 
+   console.log(primeNum + " is not prime number");
+}
+console.log("--------------------------------------------"); 
