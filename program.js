@@ -1,50 +1,40 @@
-//without sort find second smallest value 
-for (let i = 0; i < arrayNum.length; ++i)
- {
-    if (first > arrayNum[i])
-     {
-        second = first;
-        first = arrayNum[i];
-     } 
-    else if (arrayNum[i] < second && arrayNum[i] != first) 
+//Map Practice Problems
+/* 1.Write a program in the following steps
+a. Roll a die and find the number between 1 to 6
+b. Repeat the Die roll and find the result each time
+c. Store the result in a dictionary
+d. Repeat till any one of the number has reached 10 times
+e. Find the number that reached maximum times and the one that was for minimum times */
+let diceMap = new Map()
+diceMap.set(1,0)
+diceMap.set(2,0)
+diceMap.set(3,0)
+diceMap.set(4,0)
+diceMap.set(5,0)
+diceMap.set(6,0)
+let limitNotReached = 1
+while (limitNotReached == 1 ) 
+{
+    let rollDice = Math.floor(Math.random()*5)+1
+    let diceNum=diceMap.set(rollDice,diceMap.get(rollDice)+1)
+    for(let key of diceMap.keys())
     {
-        second = arrayNum[i];
+        if (diceMap.get(key)  == 10) 
+        {
+            limitNotReached = 0
+            console.log("The maximum repeated number: " +key);
+        }
+    } 
+}
+
+let min = 10
+for (let key of diceMap.keys())
+{
+    if (diceMap.get(key) < min)
+    {
+        min = diceMap.get(key)
+        var min_key = key
     }
 }
-if (second == first)
-   {
-      console.log("There is no second smallest element\n");
-   }
-else
-{
-   console.log("The Second largest element in the array is: "+ second);
-}
-console.log("-------------------------------------------------------");  
-
-//2.Extend the above program to sort the array and then find the 2nd largest and the 2nd smallest element
-let values1=10;
-let array=new Array();
-for(let i=0; i<values1; i++)
-{
-   array[i]=Math.floor(Math.random()*900)+100;
-}
-console.log("\n\nTen three digit random values before sort are:\n-------------------------------------\n" + array);
-//sort value in ascending order
-array.sort();
-console.log("Ten three digit random values after sort are:\n---------------------------------------\n" + array);
-console.log("second largest value: " + array[8]);
-console.log("second smallest value: " + array[1]);
-console.log("-------------------------------------------------------");
-
-//3. Take a range from 0 – 100, find the digits that are repeated twice like 33, 77, etc 
-
-let Num = new Array()
-for(let  i  = 0 ; i <= 100 ; i ++)
-{
-    if (i%11 == 0 && i !=0) 
-    {
-      Num.push(i)
-    }
-}
-console.log("The reapeated numbers are:-\n------------------------------\n"+Num)
+console.log("The minimum repeated number: "+min_key); 
 console.log("-------------------------------------------------------");  
